@@ -49,12 +49,10 @@
 
     <!-- Core plugins -->
 	<plugin name="cordova-plugin-statusbar" />
-    <!-- 
-		<plugin name="cordova-plugin-camera" /> 
-		<plugin name="cordova-plugin-file" />
-		<plugin name="cordova-plugin-file-transfer" />    
-	-->
+    <plugin name="cordova-plugin-camera" />
     <plugin name="cordova-plugin-media-capture" />
+    <plugin name="cordova-plugin-file" />
+    <plugin name="cordova-plugin-file-transfer" />
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-network-information" />

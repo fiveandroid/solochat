@@ -3,7 +3,7 @@
     Author     : devashish
 */
 .mck-box {
-	position: relative;		/*JVRA*/
+	position: fixed;	
 	top: 8%;				/* JVRA */
 	right: 0;
 	bottom: 0;
@@ -25,7 +25,7 @@
 }
 
 .mck-sidebox {
-	position: relative !important;	/*JVRA*/
+	position: fixed !important;
 	height: 92% !important;			/*JVRA*/
 	right: 0 !important;
 	left: auto !important;

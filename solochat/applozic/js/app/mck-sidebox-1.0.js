@@ -26,7 +26,7 @@ var MCK_CLIENT_GROUP_MAP = [];
         maxGroupSize: 100,
         authenticationTypeId: 0,
         labels: {
-            'conversations.title': 'Chats',
+            'conversations.title': 'Conversations',
             'start.new': 'Start New',
             'search.contacts': 'Contacts',
             'search.groups': 'Groups',
