@@ -782,10 +782,10 @@
 							//contactDisplayName: displayName, // displayName function defined above                       
 							//contactDisplayImage: contactImageSrc, // contactImageSrc function defined above
                         maxAttachmentSize: 25, //max attachment size in MB
-                        notificationIconLink: "https://www.applozic.com/resources/images/applozic_icon.png",
+                        notificationIconLink: "https://conoceme.vip/img/logo2.png",	//"https://www.applozic.com/resources/images/applozic_icon.png",
                         desktopNotification: true,
                         locShare: false,
-                        googleApiKey: "AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",
+                        googleApiKey: "AIzaSyCGbCsMY2HG2-8kfxqdNi8LgeUGjkk3HqA",	 //"AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",
                         groupUserCount: true,
                         onInit: function (response) {
                             if (response === 'success') {//callback function execute on plugin initialize
@@ -867,7 +867,7 @@
             function registerPushNotifications() {
                 var push = PushNotification.init({
                     androind: {
-                        senderID: '195932243324'
+                        senderID: '80917608573'		/*'195932243324'*/
                     },
                     ios: {
                         alert: true,
@@ -887,13 +887,14 @@
                                 'userId': $("#userId").val(),
                                 'registrationId': data.registrationId,
                                 'pushNotificationFormat': '1'
+								
                             };
                             $.ajax({
                                 url: "https://apps.applozic.com/rest/ws/register/client",
                                 type: 'post',
                                 data: w.JSON.stringify(userPxy),
                                 contentType: 'application/json',
-                                headers: {'Application-Key': 'applozic-sample-app'},
+                                headers: {'Application-Key': '3b66345c921f7a78c8414e15221417cf7'},
                                 success: function (result) {
                                     console.log(result);
                                 }
