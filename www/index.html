@@ -30,7 +30,9 @@
 			var v_userId = 'gea_reyesvi@yahoo.com.mx';
 			
 		</script>	
+		<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 		<script>
+		
 		  // Initialize Firebase
 		  // TODO: Replace with your project's customized code snippet
 		  var config = {
@@ -831,7 +833,7 @@
 						       //contactjson = '{"contacts": [{"userId": "pao.mejia069@gmail.com", "displayName": "Paola MejiaXXX", "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png"}]}';
 								//console.log( data.response.length );        
 							
-							console.log( idUsuario );
+							//console.log( idUsuario );
 							console.log( eval(contactjson) );              
 								
 							$applozic.fn.applozic('loadContacts', eval(contactjson) ); 							
