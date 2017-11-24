@@ -790,13 +790,13 @@
                         notificationIconLink: "https://www.applozic.com/resources/images/applozic_icon.png",
                         desktopNotification: true,
                         locShare: false,
-                        googleApiKey: "AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",
+                        googleApiKey: "AIzaSyCGbCsMY2HG2-8kfxqdNi8LgeUGjkk3HqA",
                         groupUserCount: true,
                         onInit: function (response) {
                             if (response === 'success') {//callback function execute on plugin initialize
                                 $applozic.fn.applozic('loadTab', '');		
 								//listaContactos(712);
-                                //registerPushNotifications();
+                                registerPushNotifications();
 																
                             }
                         }
@@ -805,7 +805,7 @@
 					var contactjson;
 					
 					$.ajax({  
-						url:  'https://conoceme.vip/juan/phps/chat_app_lista_favoritos.php?id='+idUsuario,
+						url:  'https://conoceme.vip/juan/phps/chat_app_lista_favoritos.php?id=gea_reyesvi@yahoo.com.mx',    //'+idUsuario,
 						headers : { "Content-Type" : "application/json" },
 						type: 'get',      												 
 						success: function(data) { 						
@@ -839,8 +839,8 @@
 					
                     // To load contact list use below function and pass contacts json in format shown above in variable 'contactjson'.
 					
-					console.log( contactjson);
-                    $applozic.fn.applozic('loadContacts', eval(contactjson) ); 							
+					//console.log( contactjson);
+                    //$applozic.fn.applozic('loadContacts', eval(contactjson) ); 							
                     return false;
                 //});
             });
